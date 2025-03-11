@@ -25,8 +25,8 @@ public class Main {
         System.out.println("\nВведите требуемый возраст");
         int age = Integer.parseInt(scanner.nextLine());
         Optional.ofNullable(users.get(age)).ifPresentOrElse(
-                x -> x.forEach(System.out::println)
-                ,() -> System.out.printf("Пользователь с возрастом '%d' не найден", age));
+                x -> x.forEach(System.out::println),
+                () -> System.out.printf("Пользователь с возрастом '%d' не найден", age));
         scanner.close();
 
     }
