@@ -20,6 +20,7 @@ public class Main {
             }
             users.get(age).add(new User(name,age));
         }
+        scanner.close();
 
         System.out.println("\nВведите требуемый возраст");
         int age = Integer.parseInt(scanner.nextLine());
